@@ -1,6 +1,6 @@
 # Octo Project
 
-[Try the online demo now.]()
+[Try the online demo now.](https://douglasdwyer.github.io/octo-release/)
 
 [See YouTube for gameplay and technical videos.](https://www.youtube.com/channel/UCjVn35Ubo5c2wagQ6bgVT1Q)
 
