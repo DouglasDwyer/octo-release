@@ -13,6 +13,9 @@
     <canvas style="position:fixed;left:0;top:0;width:100%;height:100%;outline:none" id="main-canvas" oncontextmenu="event.preventDefault()" tabindex="-1"></canvas>
     <script type="text/javascript" src="./pkg/octo.js"></script>
     <script type="module">
+      window.OldPointerEvent = window.PointerEvent;
+      window.PointerEvent = null;
+
       let canvas = document.getElementById('main-canvas');
       canvas.focus();
       let rpl = canvas.requestPointerLock.bind(canvas);
