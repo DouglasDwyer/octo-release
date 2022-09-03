@@ -37,3 +37,7 @@ In the future, development is planned for the following parts of the engine:
 - Rigidbody-based physics engine
 - An easy-to-use and secure modding system build on WASM plugins
 - Multiplayer - already implemented with WebRTC, but disbaled for this demo
+
+### Changelog
+
+- 0.1.1: Fixed a chunk meshing bug that was causing slower cached meshing times. World editing should now feel faster and smoother. In addition, improved left-click/right-click controls.
