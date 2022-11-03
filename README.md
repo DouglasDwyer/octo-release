@@ -41,3 +41,4 @@ In the future, development is planned for the following parts of the engine:
 ### Changelog
 
 - 0.1.1: Fixed a chunk meshing bug that was causing slower cached meshing times. World editing should now feel faster and smoother. In addition, improved left-click/right-click controls.
+- 0.1.2: Fixed a chunk generation priority bug that could lead to chunks being slow to load around the player. In addition, increased voxel placement/destruction radius.
