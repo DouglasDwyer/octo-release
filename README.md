@@ -4,9 +4,9 @@
 
 [Download the native demo.](https://douglasdwyer.github.io/octo-release/octo.exe)
 
-[See YouTube for gameplay and technical videos.](https://www.youtube.com/channel/UCjVn35Ubo5c2wagQ6bgVT1Q)
+[See YouTube for gameplay and technical videos.](https://www.youtube.com/@DouglasDwyer?sub_confirmation=1)
 
-This is the repository for releases of the Octo voxel game engine. The engine is designed to support the processing, modification, and rendering of large-scale voxel volumes consisting of various materials. Ultimately, the goal of Octo is to become an online multiplayer platform in which users can create, interact, and extend with mods or plugins. Using a rasterization/ray marching hybrid technique, the engine seeks to support a wide range of hardware, including integrated GPUs. Specifically, the Octo engine seeks to:
+This is the repository for releases of the Octo voxel game engine. The engine is designed to support the processing, modification, and rendering of large-scale voxel volumes consisting of various colors and materials. Ultimately, the goal of Octo is to become an online multiplayer platform in which users can create, interact, and extend with mods or plugins. Using voxel ray marching with compute shaders, the engine seeks to support a wide range of hardware, including integrated GPUs. Specifically, the Octo engine seeks to:
 
 - Run at playable speeds on integrated hardware
 - Run at playable speeds in a web browser
@@ -23,16 +23,22 @@ The engine is written in Rust, and runs on native platforms and the web using WA
 
 ### Features
 
-The follow features are included in the demo:
+The following features are included in the demo:
 
-- Large-scale voxel rendering using greedy meshing and LODs
-- Realtime diffuse/specular lighting with directional shadows
+- Large-scale voxel rendering using ray marching and LODs
+- Realtime diffuse lighting with ray marched shadows
+- Importing voxel models at various scales
+
+### To be re-added
+
+The following features used to exist, but have been removed as a part of the ray marching rewrite.
+They will be added back soon:
+
 - Fully editable voxel terrain
 - Transparent voxel objects
 - Octree-accelerated rigidbody collision detection
 - Octree-accelerated terrain generation with Perlin noise
 - Peer-to-peer networked multiplayer
-- Importing voxel models at various scales
 
 ### Future plans
 
@@ -53,3 +59,4 @@ In the future, development is planned for the following parts of the engine:
 - 0.3.1: Added task-level and data-level multithreading, alongside other optimizations for the physics engine. Fixed various bugs.
 - 0.3.2: Overhauled the networking systems related to chunk/entity synchronization. Drastically reduced network bandwidth consumption, improving multiplayer performance.
 - 0.3.3: Fixed a critical issue with network chunk synchronization.
+- 0.5.0: Removed all voxel-related code from the engine. Implemented new voxel data structures with ray marched graphics.
