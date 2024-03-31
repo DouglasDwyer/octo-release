@@ -12,7 +12,7 @@ This is the repository for releases of the Octo voxel game engine. The engine is
 - Run at playable speeds in a web browser
 - Run at high-quality speeds on desktop with a discrete GPU
 
-The engine is written in Rust, and runs on native platforms and the web using WASM and WebGL 2.0.
+The engine is written in Rust, and runs on native platforms and the web using WASM and WebGPU.
 
 ### Controls
 
