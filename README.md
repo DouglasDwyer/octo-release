@@ -33,17 +33,18 @@ The following features are included in the demo:
 - Large-scale voxel rendering using ray marching and LODs
 - Realtime diffuse lighting with ray marched shadows
 - Importing voxel models at various scales
+- Fully editable voxel terrain
+- TCP networked multiplayer (desktop only)
 
 ### To be re-added
 
 The following features used to exist, but have been removed as a part of the ray marching rewrite.
 They will be added back soon:
 
-- Fully editable voxel terrain
 - Transparent voxel objects
 - Octree-accelerated rigidbody collision detection
 - Octree-accelerated terrain generation with Perlin noise
-- Peer-to-peer networked multiplayer
+- Peer-to-peer networked multiplayer (web and desktop)
 
 ### Future plans
 
@@ -65,3 +66,4 @@ In the future, development is planned for the following parts of the engine:
 - 0.3.2: Overhauled the networking systems related to chunk/entity synchronization. Drastically reduced network bandwidth consumption, improving multiplayer performance.
 - 0.3.3: Fixed a critical issue with network chunk synchronization.
 - 0.5.0: Removed all voxel-related code from the engine. Implemented new voxel data structures with ray marched graphics.
+- 0.6.0: Major improvements to ray marcher performance. In addition, added back world editing, LODs, and some multiplayer functionality.
