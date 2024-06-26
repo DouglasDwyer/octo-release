@@ -68,3 +68,4 @@ In the future, development is planned for the following parts of the engine:
 - 0.5.0: Removed all voxel-related code from the engine. Implemented new voxel data structures with ray marched graphics.
 - 0.6.0: Major improvements to ray marcher performance. In addition, added back world editing, LODs, and some multiplayer functionality.
 - 0.7.0: Added path-traced indirect lighting, including ambient occlusion and emissive voxels.
+- 0.7.1: Upgraded winit to fix bug with mouse input on web.
