@@ -23,6 +23,7 @@ The engine is written in Rust, and runs on native platforms and the web using WA
 
 - Mouse: look around
 - T: lock/unlock cursor
+- G: swap material
 - Left click: destroy
 - Right click: build
 
@@ -31,7 +32,7 @@ The engine is written in Rust, and runs on native platforms and the web using WA
 The following features are included in the demo:
 
 - Large-scale voxel rendering using ray marching and LODs
-- Realtime diffuse lighting with ray marched shadows
+- Realtime path-traced lighting (ambient occlusion, shadows, and emissive voxels)
 - Importing voxel models at various scales
 - Fully editable voxel terrain
 - TCP networked multiplayer (desktop only)
@@ -53,7 +54,6 @@ In the future, development is planned for the following parts of the engine:
 - Immersive character and camera controls
 - 3D spatial audio
 - A material system that allows assigning properties to voxel types, such as textures, sound effects, and physics data
-- Point lighting with shadows for multiple light sources
 - An easy-to-use and secure modding system build on WASM plugins
 
 ### Changelog
@@ -67,3 +67,4 @@ In the future, development is planned for the following parts of the engine:
 - 0.3.3: Fixed a critical issue with network chunk synchronization.
 - 0.5.0: Removed all voxel-related code from the engine. Implemented new voxel data structures with ray marched graphics.
 - 0.6.0: Major improvements to ray marcher performance. In addition, added back world editing, LODs, and some multiplayer functionality.
+- 0.7.0: Added path-traced indirect lighting, including ambient occlusion and emissive voxels.
