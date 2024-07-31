@@ -22,10 +22,13 @@ The engine is written in Rust, and runs on native platforms and the web using WA
 ### Controls
 
 - Mouse: look around
+- WASD: move horizontally
+- Space/shift: move vertically
 - T: lock/unlock cursor
 - G: swap material
+- F: spawn physics object
 - Left click: destroy
-- Right click: build
+- Right click: build, drag object
 
 ### Features
 
@@ -33,6 +36,7 @@ The following features are included in the demo:
 
 - Large-scale voxel rendering using ray marching and LODs
 - Realtime path-traced lighting (ambient occlusion, shadows, and emissive voxels)
+- Rigidbody physics simulation
 - Importing voxel models at various scales
 - Fully editable voxel terrain
 - TCP networked multiplayer (desktop only)
@@ -43,7 +47,6 @@ The following features used to exist, but have been removed as a part of the ray
 They will be added back soon:
 
 - Transparent voxel objects
-- Octree-accelerated rigidbody collision detection
 - Octree-accelerated terrain generation with Perlin noise
 - Peer-to-peer networked multiplayer (web and desktop)
 
@@ -69,3 +72,4 @@ In the future, development is planned for the following parts of the engine:
 - 0.6.0: Major improvements to ray marcher performance. In addition, added back world editing, LODs, and some multiplayer functionality.
 - 0.7.0: Added path-traced indirect lighting, including ambient occlusion and emissive voxels.
 - 0.7.1: Upgraded winit to fix bug with mouse input on web.
+- 0.8.0: Implemented realistic rigidbody physics. Fixed graphics bugs and improved performance.
