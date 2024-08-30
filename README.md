@@ -29,6 +29,7 @@ The engine is written in Rust, and runs on native platforms and the web using WA
 - F: spawn physics object
 - Left click: destroy
 - Right click: build, drag object
+- Escape: pause game
 
 ### Features
 
@@ -36,10 +37,11 @@ The following features are included in the demo:
 
 - Large-scale voxel rendering using ray marching and LODs
 - Realtime path-traced lighting (ambient occlusion, shadows, and emissive voxels)
+- Fully editable voxel terrain
 - Rigidbody physics simulation
 - Importing voxel models at various scales
-- Fully editable voxel terrain
 - TCP networked multiplayer (desktop only)
+- WASM-based modding system with runtime loading of mods
 
 ### To be re-added
 
@@ -57,7 +59,6 @@ In the future, development is planned for the following parts of the engine:
 - Immersive character and camera controls
 - 3D spatial audio
 - A material system that allows assigning properties to voxel types, such as textures, sound effects, and physics data
-- An easy-to-use and secure modding system build on WASM plugins
 
 ### Changelog
 
@@ -73,3 +74,4 @@ In the future, development is planned for the following parts of the engine:
 - 0.7.0: Added path-traced indirect lighting, including ambient occlusion and emissive voxels.
 - 0.7.1: Upgraded winit to fix bug with mouse input on web.
 - 0.8.0: Implemented realistic rigidbody physics. Fixed graphics bugs and improved performance.
+- 0.9.0: Implemented WASM-based modding system. Exposed GUI and user input APIs for mods to use. Added controller support.
