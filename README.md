@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **This repo contains an outdated version of my voxel game engine from August 2024. Development continues on the next iteration, which is available to try on [Patreon](https://www.patreon.com/DouglasDwyer). You can also follow along on [YouTube](https://www.youtube.com/@DouglasDwyer?sub_confirmation=1) for the latest updates.**
+
 # Octo Project
 
 [Try the online demo now.](https://douglasdwyer.github.io/octo-release/)
